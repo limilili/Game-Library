@@ -32,3 +32,5 @@ data/
 .mimosa/
 .zcode/
 *.log
+
+tests/sandbox/ui/screenshots/
