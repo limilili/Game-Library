@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "scheme": {
+    "name": "官方分类方案",
+    "source": "OFFICIAL",
+    "version": "0.9"
+  },
+  "type_tree": {
+    "name": "玩法",
+    "description": "按游戏内容/玩法分类，每个游戏在 TYPE 维度挂一个叶节点（自动继承父级）",
+    "root": [
+      {
+        "id": "rpg",
+        "name": "RPG",
+        "icon": "🎮",
+        "children": [
+          {
+            "id": "jrpg",
+            "name": "JRPG",
+            "is_leaf": true
+          },
+          {
+            "id": "wrpg",
+            "name": "WRPG",
+            "children": [
+              {
+                "id": "wrpg-openworld",
+                "name": "开放世界WRPG",
+                "is_leaf": true
+              },
+              {
+                "id": "crpg",
+                "name": "CRPG",
+                "is_leaf": true
+              },
+              {
+                "id": "arpg-dark",
+                "name": "ARPG（暗黑类）",
+                "is_leaf": true
+              },
+              {
+                "id": "wrpg-other",
+                "name": "其他WRPG",
+                "is_leaf": true
+              }
+            ]
+          },
+          {
+            "id": "srpg",
+            "name": "SRPG",
+            "is_leaf": true
+          },
+          {
+            "id": "mmorpg",
+            "name": "MMORPG",
+            "is_leaf": true
+          },
+          {
+            "id": "rpg-other",
+            "name": "其他RPG",
+            "is_leaf": true
+          }
+        ]
+      },
+      {
+        "id": "action",
+        "name": "动作",
+        "icon": "⚔️",
+        "children": [
+          {
+            "id": "action-3d",
+            "name": "3D动作",
+            "children": [
+              {
+                "id": "soulslike",
+                "name": "硬核动作（魂系）",
+                "is_leaf": true
+              },
+              {
+                "id": "musou",
+                "name": "爽快动作（无双类）",
+                "is_leaf": true
+              },
+              {
+                "id": "stealth",
+                "name": "潜行动作",
+                "is_leaf": true
+              },
+              {
+                "id": "action-3d-other",
+                "name": "其他3D动作",
+                "is_leaf": true
+              }
+            ]
+          },
+          {
+            "id": "action-2d",
+            "name": "2D动作",
+            "children": [
+              {
+                "id": "platformer",
+                "name": "平台动作",
+                "is_leaf": true
+              },
+              {
+                "id": "metroidvania",
+                "name": "类银河战士恶魔城",
+                "is_leaf": true
+              },
+              {
+                "id": "action-2d-other",
+                "name": "其他2D动作",
+                "is_leaf": true
+              }
+            ]
+          },
+          {
+            "id": "action-other",
+            "name": "其他动作",
+            "is_leaf": true
+          }
+        ]
+      },
+      {
+        "id": "shooter",
+        "name": "射击",
+        "icon": "🔫",
+        "children": [
+          {
+            "id": "fps",
+            "name": "FPS",
+            "is_leaf": true
+          },
+          {
+            "id": "tps",
+            "name": "TPS",
+            "is_leaf": true
+          },
+          {
+            "id": "stg",
+            "name": "STG（弹幕）",
+            "is_leaf": true
+          },
+          {
+            "id": "shooter-other",
+            "name": "其他射击",
+            "is_leaf": true
+          }
+        ]
+      },
+      {
+        "id": "visual-novel",
+        "name": "文字冒险",
+        "children": [
+          {
+            "id": "galgame",
+            "name": "Galgame",
+            "is_leaf": true
+          },
+          {
+            "id": "live-action",
+            "name": "真人互动",
+            "is_leaf": true
+          }
+        ]
+      },
+      {
+        "id": "adventure",
+        "name": "冒险",
+        "icon": "🕵️",
+        "children": [
+          {
+            "id": "point-click",
+            "name": "点击式冒险",
+            "is_leaf": true
+          },
+          {
+            "id": "interactive-film",
+            "name": "互动电影",
+            "is_leaf": true
+          },
+          {
+            "id": "action-adventure",
+            "name": "动作冒险",
+            "is_leaf": true
+          },
+          {
+            "id": "adventure-other",
+            "name": "其他冒险",
+            "is_leaf": true
+          }
+        ]
+      },
+      {
+        "id": "strategy",
+        "name": "策略",
+        "icon": "🧩",
+        "children": [
+          {
+            "id": "rts",
+            "name": "RTS",
+            "is_leaf": true
+          },
+          {
+            "id": "4x",
+            "name": "4X策略",
+            "is_leaf": true
+          },
+          {
+            "id": "tower-defense",
+            "name": "塔防",
+            "is_leaf": true
+          },
+          {
+            "id": "war-strategy",
+            "name": "战争策略",
+            "is_leaf": true
+          },
+          {
+            "id": "strategy-other",
+            "name": "其他策略",
+            "is_leaf": true
+          }
+        ]
+      },
+      {
+        "id": "simulation",
+        "name": "模拟",
+        "icon": "🏗️",
+        "children": [
+          {
+            "id": "sim-management",
+            "name": "模拟经营",
+            "is_leaf": true
+          },
+          {
+            "id": "sim-dating",
+            "name": "模拟恋爱",
+            "is_leaf": true
+          },
+          {
+            "id": "survival-craft",
+            "name": "生存建造",
+            "is_leaf": true
+          },
+          {
+            "id": "simulation-other",
+            "name": "其他模拟",
+            "is_leaf": true
+          }
+        ]
+      },
+      {
+        "id": "racing-sports",
+        "name": "竞速运动",
+        "icon": "🏎️",
+        "is_leaf": true
+      },
+      {
+        "id": "rhythm",
+        "name": "音乐节奏",
+        "icon": "🎵",
+        "is_leaf": true
+      },
+      {
+        "id": "puzzle",
+        "name": "益智解谜",
+        "icon": "🧠",
+        "is_leaf": true
+      },
+      {
+        "id": "casual",
+        "name": "休闲",
+        "icon": "🎉",
+        "is_leaf": true
+      },
+      {
+        "id": "card",
+        "name": "卡牌",
+        "icon": "🃏",
+        "children": [
+          {
+            "id": "card",
+            "name": "卡牌",
+            "is_leaf": true
+          }
+        ]
+      },
+      {
+        "id": "fighting",
+        "name": "格斗",
+        "icon": "🥊",
+        "is_leaf": true
+      },
+      {
+        "id": "horror",
+        "name": "恐怖",
+        "icon": "👻",
+        "children": [
+          {
+            "id": "horror-zombie",
+            "name": "僵尸",
+            "is_leaf": true
+          },
+          {
+            "id": "horror-psychological",
+            "name": "心理恐怖",
+            "is_leaf": true
+          },
+          {
+            "id": "horror-survival",
+            "name": "生存恐怖",
+            "is_leaf": true
+          },
+          {
+            "id": "horror-puzzle",
+            "name": "恐怖解谜",
+            "is_leaf": true
+          },
+          {
+            "id": "horror-stealth",
+            "name": "潜行恐怖",
+            "is_leaf": true
+          },
+          {
+            "id": "horror-lovecraft",
+            "name": "克苏鲁",
+            "is_leaf": true
+          },
+          {
+            "id": "horror-other",
+            "name": "其他恐怖",
+            "is_leaf": true
+          }
+        ]
+      },
+      {
+        "id": "sandbox",
+        "name": "沙盒",
+        "icon": "🏝️",
+        "is_leaf": true
+      },
+      {
+        "id": "multiplayer",
+        "name": "多人",
+        "icon": "👥",
+        "children": [
+          {
+            "id": "party-game",
+            "name": "派对游戏",
+            "is_leaf": true
+          },
+          {
+            "id": "pvp",
+            "name": "PVP",
+            "is_leaf": true
+          },
+          {
+            "id": "pve",
+            "name": "PVE",
+            "is_leaf": true
+          },
+          {
+            "id": "duo-game",
+            "name": "双人游戏",
+            "is_leaf": true
+          }
+        ]
+      }
+    ]
+  },
+  "styles": {
+    "name": "风格",
+    "description": "横跨多个玩法大类的核心内容；扁平标签，游戏可挂多个。开关：开=作为顶层大类进分类树，关=仅标签（小窗显示/筛选）",
+    "default_in_tree": false,
+    "items": [
+      {
+        "id": "roguelike",
+        "name": "肉鸽",
+        "default_in_tree": false
+      },
+      {
+        "id": "r18",
+        "name": "R18",
+        "default_in_tree": false
+      },
+      {
+        "id": "delisted",
+        "name": "已下架"
+      },
+      {
+        "id": "no-patch",
+        "name": "无需补丁",
+        "default_in_tree": false,
+        "description": "R18 锁区游戏且用户自有（已处理补丁）"
+      },
+      {
+        "id": "need-patch",
+        "name": "需要补丁",
+        "default_in_tree": false,
+        "description": "R18 游戏暂列：非自有锁区/有色情标签（等待用户处理）"
+      },
+      {
+        "id": "echi",
+        "name": "擦边",
+        "default_in_tree": false,
+        "description": "日系卖肉/美少女擦边（有成人要素但非黄油）——R18 子类"
+      }
+    ]
+  }
+}

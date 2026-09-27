@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual env
+.venv/
+venv/
+
+# Build output
+dist/
+build/
+*.spec
+*.exe
+*.zip
+
+# Local runtime data
+kuji_dev.db
+*.db-wal
+*.db-shm
+config.yaml
+logs/
+.backup/
+data/
+
+# IDE / tooling
+.idea/
+.claude/
+.mimosa/
+.zcode/
+*.log
