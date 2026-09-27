@@ -46,6 +46,8 @@ def fake_steam(tmp_path: Path) -> Path:
 
 def test_serialize_matches_steam_format() -> None:
     """Steam 序列化格式字节级匹配（POC-3 回归）。"""
+    if not REAL_COPY.exists():
+        pytest.skip("公开仓库未包含真实 sandbox 数据副本")
     raw = REAL_COPY.read_bytes()
     assert serialize(read_store(REAL_COPY)) == raw
 

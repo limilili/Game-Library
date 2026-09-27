@@ -23,6 +23,7 @@ dev = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+norecursedirs = ["tests/sandbox", ".venv", "dist", "build"]
 pythonpath = ["."]
 
 [tool.mypy]
