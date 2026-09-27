@@ -101,5 +101,10 @@ AI 调用会把游戏名称和 AppID 发送给你配置的 AI 服务商，并可
 
 ## License
 
-待定。请仓库所有者自行选择许可证（MIT / Apache-2.0 / GPL-3.0 / 专有等）。
-PySide6 使用 LGPL，分发打包版本时请遵守其许可证要求。
+本项目自有源码采用 **GNU General Public License v3.0**，见仓库根目录：
+
+- `LICENSE`：GPL-3.0 全文
+- `THIRD_PARTY_LICENSES.md`：PySide6 / Qt 等第三方组件说明
+
+PySide6 / Qt 6 以 LGPLv3 或商业许可提供，本项目以动态链接方式使用；
+分发打包版时请保留相应许可证和第三方声明。
